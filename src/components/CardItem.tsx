@@ -1,8 +1,9 @@
+import { CardProps } from "./Card"
 
 
 interface CardItemProps {
-    post: any;
-  }
+    post: CardProps
+}
 
 const CardItem:React.FC<CardItemProps> = ({post}) => {
         console.log(post)
@@ -10,7 +11,6 @@ const CardItem:React.FC<CardItemProps> = ({post}) => {
     return (
         <div>
                 <h1>{post.title}</h1>
-                <h1>Hello world</h1>
         </div>
     )
 }
