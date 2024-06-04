@@ -1,7 +1,11 @@
-import CardItem from "./CardItem"
+import CardItem from "./CardItem";
 
 function Card() {
-  return CardItem
+  return (
+    <>
+      <CardItem />
+    </>
+  );
 }
 
-export default Card
+export default Card;
