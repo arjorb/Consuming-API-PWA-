@@ -1,8 +1,7 @@
+import CardItem from "./CardItem"
 
 function Card() {
-  return (
-    <div>Card</div>
-  )
+  return CardItem
 }
 
 export default Card
