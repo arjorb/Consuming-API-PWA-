@@ -1,11 +1,12 @@
 
+import Title from './components/Title';
 function App() {
 
 
   return (
-    <h1 className="text-3xl font-bold underline text-center text-green-600">
-    Setting Up
-  </h1>
+    <div className="max-w-7xl mx-auto my-5">
+    <Title/>
+  </div>
   )
 }
 
