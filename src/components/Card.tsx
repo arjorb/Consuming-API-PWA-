@@ -11,7 +11,7 @@ function Card() {
     }, [])
   return (
     <>
-      <CardItem posts />
+      <CardItem posts={posts} />
     </>
   );
 }
