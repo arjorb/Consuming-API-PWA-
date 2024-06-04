@@ -1,14 +1,16 @@
 
 
 interface CardItemProps {
-    posts: any;
+    post: any;
   }
 
-const CardItem:React.FC<CardItemProps> = ({posts}) => {
-        console.log(posts)
+const CardItem:React.FC<CardItemProps> = ({post}) => {
+        console.log(post)
+        console.log("post")
     return (
         <div>
-                <h1>{posts.title}</h1>
+                <h1>{post.title}</h1>
+                <h1>Hello world</h1>
         </div>
     )
 }
