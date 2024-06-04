@@ -1,18 +1,14 @@
-import { useEffect, useState } from "react"
 
 
-function CardItem() {
-        const [post, setPost] = useState({}) // Update initial state to empty object
+interface CardItemProps {
+    posts: any;
+  }
 
-        useEffect(() => {
-                fetch('https://jsonplaceholder.typicode.com/posts')
-                .then(res => res.json())
-                .then(data => setPost(data))
-        }, [])
-        console.log(post)
+const CardItem:React.FC<CardItemProps> = ({posts}) => {
+        console.log(posts)
     return (
         <div>
-                <h1>Hello</h1>
+                <h1>{posts.title}</h1>
         </div>
     )
 }
