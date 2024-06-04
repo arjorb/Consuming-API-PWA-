@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import CardItem from "./CardItem";
 
+interface CardProps {
+    userId: number;
+    title: string;
+    body: string;
+}
+
 function Card() {
     const [posts, setPost] = useState([])
 
@@ -10,7 +16,7 @@ function Card() {
             .then(data => setPost(data))
     }, [])
 
-    const renderPost = posts.map((post: any) => <CardItem key={post.id} post={post} />)
+    const renderPost = posts.map((post:CardProps) => <CardItem key={post.userId} post={post} />)
   return (
     <>
     {renderPost}
