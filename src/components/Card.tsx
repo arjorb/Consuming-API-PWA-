@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CardItem from "./CardItem";
 
-interface CardProps {
+export interface CardProps {
     userId: number;
     title: string;
     body: string;
@@ -18,9 +18,9 @@ function Card() {
 
     const renderPost = posts.map((post:CardProps) => <CardItem key={post.userId} post={post} />)
   return (
-    <>
+    <div className="flex flex-wrap justify-between">
     {renderPost}
-    </>
+    </div>
   );
 }
 

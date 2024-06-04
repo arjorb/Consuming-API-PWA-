@@ -9,8 +9,9 @@ const CardItem:React.FC<CardItemProps> = ({post}) => {
         console.log(post)
         console.log("post")
     return (
-        <div className="w-60 bg-gray-100 my-2 p-2">
-                <h1>{post.title}</h1>
+        <div className="w-72 bg-gray-100 my-2 p-3 rounded">
+                <h1 className=" font-semibold">{post.title.substring(0,30)}...</h1>
+                <p className="my-4 text-sm">{post.body}</p>
         </div>
     )
 }
