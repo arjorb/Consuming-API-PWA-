@@ -9,7 +9,7 @@ const CardItem:React.FC<CardItemProps> = ({post}) => {
         console.log(post)
         console.log("post")
     return (
-        <div>
+        <div className="w-60 bg-gray-100 my-2 p-2">
                 <h1>{post.title}</h1>
         </div>
     )
