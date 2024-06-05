@@ -6,8 +6,7 @@ interface CardItemProps {
 }
 
 const CardItem:React.FC<CardItemProps> = ({post}) => {
-        console.log(post)
-        console.log("post")
+   
     return (
         <div className="w-72 bg-gray-100 my-2 p-3 rounded">
                 <h1 className="text-sm font-semibold underline">{post.title.substring(0,30)}...</h1>
