@@ -27,7 +27,7 @@ function Card() {
 
     const renderPost = posts.map((post:CardProps) => <CardItem key={post.id} post={post} />)
   return (
-    <div className="flex flex-wrap justify-between">
+    <div className="w-full flex flex-wrap justify-between">
     {renderPost}
     </div>
   );

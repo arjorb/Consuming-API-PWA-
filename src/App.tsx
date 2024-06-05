@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <div className="max-w-7xl mx-auto my-5">
+    <div className="max-w-7xl mx-auto my-5 p-7">
     <Title/>
     <Card/>
   </div>

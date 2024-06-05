@@ -14,7 +14,7 @@ self.skipWaiting();
 // cache api calls
 const fetchPostRoute = new Route(
   ({ request }) => {
-    return request.url === import.meta.env.VITE_BASE_URL;
+    return request.url === "https://jsonplaceholder.typicode.com/posts";
   },
   new NetworkFirst({
     cacheName: "api/fecth-post",
