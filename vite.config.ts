@@ -13,7 +13,7 @@ export default defineConfig({
       filename: 'sw.ts',
       registerType: 'autoUpdate',
       injectManifest: {
-        swDest: 'dist/sw.ts',
+        swDest: 'dist/sw.js',
       },
       manifest: {
         name: 'Recent Posts',
