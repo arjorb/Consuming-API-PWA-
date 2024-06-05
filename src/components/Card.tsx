@@ -3,6 +3,7 @@ import CardItem from "./CardItem";
 
 export interface CardProps {
     userId: number;
+    id: number;
     title: string;
     body: string;
 }
@@ -24,7 +25,7 @@ function Card() {
         fetchData();
     }, []);
 
-    const renderPost = posts.map((post:CardProps) => <CardItem key={post.userId} post={post} />)
+    const renderPost = posts.map((post:CardProps) => <CardItem key={post.id} post={post} />)
   return (
     <div className="flex flex-wrap justify-between">
     {renderPost}
