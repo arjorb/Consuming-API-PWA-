@@ -10,7 +10,6 @@ const Title = () => {
         alt="cover image"
         className="w-full h-80 object-cover rounded-lg"
       />
-      <h2>Welcome to Posts</h2>
       </div>
     </div>
   );
