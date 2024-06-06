@@ -10,17 +10,17 @@ export interface CardProps {
 function Card() {
     const [posts, setPost] = useState([])
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-                const data = await response.json();
-                setPost(data);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
+    const fetchData = async () => {
+        try {
+            const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+            const data = await response.json();
+            setPost(data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
 
+    useEffect(() => {
         fetchData();
     }, []);
 
