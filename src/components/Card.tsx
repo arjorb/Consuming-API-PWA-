@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import CardItem from "./CardItem";
 
 export interface CardProps {
-    userId: number;
     id: number;
     title: string;
-    body: string;
+    thumbnailUrl: string;
 }
 
 function Card() {
@@ -14,7 +13,7 @@ function Card() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+                const response = await fetch('https://jsonplaceholder.typicode.com/photos');
                 const data = await response.json();
                 setPost(data);
             } catch (error) {
