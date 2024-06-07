@@ -9,7 +9,7 @@ const Recommended = () => {
       >
         Recommended
       </Link>
-      <p className="mt-4">This is a description.</p>
+      <p className="mt-4">This is a description of recommended posts.</p>
     </div>
   );
 };
