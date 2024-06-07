@@ -1,14 +1,23 @@
 
-import Title from './components/Title';
-import Card from './components/Card';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './routes/Home';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+]);
+
 function App() {
 
 
   return (
-    <div className="max-w-7xl mx-auto my-5 p-7">
-    <Title/>
-    <Card/>
-  </div>
+    <RouterProvider router={router} />
   )
 }
 
